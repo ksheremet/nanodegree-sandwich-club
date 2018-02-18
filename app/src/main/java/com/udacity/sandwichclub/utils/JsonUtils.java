@@ -44,9 +44,10 @@ public class JsonUtils {
     }
 
     private static List<String> parseStringArray(final JSONObject jsonObj, final String nodeName) {
-        List<String> values = new ArrayList<>();
+        ArrayList<String> values = new ArrayList<>();
         try {
             JSONArray jsonStringArray = jsonObj.getJSONArray(nodeName);
+            values.ensureCapacity(jsonStringArray.length());
             for (int i = 0; i < jsonStringArray.length(); i++) {
                 values.add(jsonStringArray.getString(i));
             }

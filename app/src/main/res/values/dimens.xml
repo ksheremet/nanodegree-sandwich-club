@@ -2,4 +2,8 @@
 <resources>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="right_border_text_indent">8dp</dimen>
+    <dimen name="left_border_text_indent">16dp</dimen>
+    <dimen name="sandwich_info_indent">24dp</dimen>
+
 </resources>
